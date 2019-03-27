@@ -1,0 +1,43 @@
+<div class="contenedor">
+    <h1>Grocery List Name</h1>
+    <form >
+      <input type="text" placeholder="Add Item" />
+      <button type="submit">
+        <span>
+          +
+        </span>
+      </button>
+    </form>
+    <div class="table">
+        <div class="table-header">
+                <div class="articulo">
+                        <span>Articulo</span>
+                      </div>
+                      <div class="cantidad">
+                        <span>Cantidad</span>
+                      </div>
+                      <div class="precio">
+                        <span>Precio</span>
+                      </div>
+        </div>
+        <div class="table-content">
+            <div class="articulo-item">
+                <span>Pan</span>
+            </div>
+            <div class="cantidad-item">
+                <span>1</span>
+            </div>
+            <div class="precio-item">
+                <span>
+                    {{ '1' | currency:'AR$' }}
+                </span>
+            </div>
+        </div>
+      
+    </div>
+    <div class="total">
+      <span>
+        {{ "0" | currency: "AR$" }}
+      </span>
+    </div>
+</div>
